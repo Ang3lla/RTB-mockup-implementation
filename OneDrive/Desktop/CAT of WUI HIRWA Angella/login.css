@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #2a6dc5;
+}
+
+.page-bg {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2a6dc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 40px 36px 40px;
+  width: 480px;
+  max-width: 92vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-wrap {
+  margin-bottom: 52px;
+}
+
+.logo {
+  height: 62px;
+  width: auto;
+  display: block;
+}
+
+.register-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2a6dc5;
+  letter-spacing: 1.5px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.stepper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 32px;
+  gap: 0;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #c8d8ef;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-circle.active {
+  background-color: #2a6dc5;
+}
+
+.step-label {
+  font-size: 11px;
+  color: #aab8cc;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.step-label.active {
+  color: #2a6dc5;
+  font-weight: 600;
+}
+
+.step-line {
+  flex: 1;
+  height: 2px;
+  background-color: #2a6dc5;
+  margin-top: 14px;
+  min-width: 120px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px 20px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group.full-width {
+  grid-column: 1 / 2;
+}
+
+label {
+  font-size: 12px;
+  color: #3a3a3a;
+  font-weight: 500;
+}
+
+.select-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.select-wrap select {
+  width: 100%;
+  padding: 10px 32px 10px 12px;
+  border: 1px solid #d0d8e4;
+  border-radius: 6px;
+  background: #ffffff;
+  font-size: 12px;
+  color: #555;
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.select-wrap select:focus {
+  border-color: #2a6dc5;
+}
+
+.chevron {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 14px;
+  pointer-events: none;
+  display: block;
+}
+
+.btn-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.btn-register {
+  background-color: #2a6dc5;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 52px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.3px;
+}
+
+.btn-register:hover {
+  background-color: #1f5aaa;
+}
+
+.login-link {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+.login-link a {
+  color: #2a6dc5;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+  .card {
+    padding: 28px 18px 24px 18px;
+    border-radius: 12px;
+    width: 92vw;
+  }
+
+  .step-line {
+    min-width: 60px;
+  }
+
+  .form-grid {
+    gap: 16px 10px;
+  }
+
+  .btn-register {
+    padding: 10px 36px;
+    width: 100%;
+  }
+}
+
+@media (max-height: 680px) {
+  .logo {
+    height: 48px;
+  }
+
+  .logo-wrap {
+    margin-bottom: 16px;
+  }
+
+  .register-title {
+    margin-bottom: 10px;
+  }
+
+  .stepper {
+    margin-bottom: 18px;
+  }
+
+  .form-grid {
+    gap: 14px 16px;
+    margin-bottom: 18px;
+  }
+
+  .select-wrap select {
+    padding: 7px 32px 7px 12px;
+  }
+}

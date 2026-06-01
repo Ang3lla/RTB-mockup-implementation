@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RTB Dashboard</title>
+<link rel="stylesheet" href="list.css">
+</head>
+<body>
+
+<div class="layout">
+
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <img src="logo2.png" alt="RTB" class="logo">
+    </div>
+
+    <nav class="sidebar-nav">
+      <a href="#" class="nav-item">
+        <img src="home.png" alt="" class="nav-icon">
+        <span>Home</span>
+      </a>
+
+      <div class="nav-item has-children open">
+        <div class="nav-item-row active">
+          <img src="user-avatar.png" alt="" class="nav-icon">
+          <span>Recruitment</span>
+          <img src="chevron.png" alt="" class="nav-chevron">
+        </div>
+        <div class="nav-children">
+          <a href="#" class="nav-child active">
+            <span class="nav-child-dot"></span>
+            <img src="bank.png" alt="" class="nav-child-icon">
+            <span>Transfers</span>
+          </a>
+          <a href="#" class="nav-child">
+            <span class="nav-child-dot"></span>
+            <img src="bank.png" alt="" class="nav-child-icon">
+            <span>Trainers</span>
+          </a>
+          <a href="#" class="nav-child">
+            <span class="nav-child-dot"></span>
+            <img src="bank.png" alt="" class="nav-child-icon">
+            <span>Vacant Posts</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-item">
+        <img src="performance.png" alt="" class="nav-icon">
+        <span>Performance</span>
+        <img src="chevron.png" alt="" class="nav-chevron">
+      </a>
+
+      <a href="#" class="nav-item">
+        <img src="bank.png" alt="" class="nav-icon">
+        <span>Payment</span>
+        <img src="chevron.png" alt="" class="nav-chevron">
+      </a>
+    </nav>
+
+    <div class="sidebar-logout">
+      <a href="#" class="logout-link">
+        <img src="out.png" alt="" class="nav-icon">
+        <span>Logout</span>
+      </a>
+    </div>
+  </aside>
+
+  <div class="main-wrap">
+    <header class="topbar">
+      <nav class="breadcrumb">
+        <span>School Manager</span>
+        <span class="sep">/</span>
+        <span>Dashboard</span>
+        <span class="sep">/</span>
+        <span>Recruitments</span>
+        <span class="sep">/</span>
+        <span class="bc-active">Transfers</span>
+      </nav>
+      <div class="topbar-search">
+        <input type="text" placeholder="Search">
+      </div>
+      <div class="topbar-actions">
+        <button class="icon-btn">
+          <img src="notification.png" alt="Notifications" class="topbar-icon">
+          <span class="notif-dot"></span>
+        </button>
+        <button class="icon-btn avatar-btn">
+          <img src="Damiano David.jpg" alt="User" class="avatar-img">
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <h1 class="page-title">Incoming Transfers</h1>
+
+      <div class="tabs-row">
+        <div class="tabs">
+          <button class="tab active">Incoming</button>
+          <button class="tab">Outgoing</button>
+        </div>
+        <div class="filters">
+          <div class="filter-select">
+            <span>Filter</span>
+            <img src="chevron.png" alt="" class="filter-chevron">
+          </div>
+          <div class="filter-select">
+            <span>Filter</span>
+            <img src="chevron.png" alt="" class="filter-chevron">
+          </div>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Trainer's Names</th>
+              <th>District From</th>
+              <th>Trade</th>
+              <th>Qualification</th>
+              <th>Position</th>
+              <th>School From</th>
+              <th>View</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rwanda Coding Academy</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Vraiment Donc</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status approved">Approved</span></td>
+            </tr>
+            <tr>
+              <td>Rwanda Coding Academy</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Rwanda Coding Academy</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status approved">Approved</span></td>
+            </tr>
+            <tr>
+              <td>Rwanda Coding Academy</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Vraiment Donc</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status approved">Approved</span></td>
+            </tr>
+            <tr>
+              <td>Rwanda Coding Academy</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Rwanda Coding Academy</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status approved">Approved</span></td>
+            </tr>
+            <tr>
+              <td>Vraiment Donc</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status pending">Pending</span></td>
+            </tr>
+            <tr>
+              <td>Rwanda Coding Academy</td>
+              <td>Huye</td>
+              <td>Culinary Arts</td>
+              <td>A0</td>
+              <td>Matron</td>
+              <td>Rwanda Coding Academy</td>
+              <td><button class="view-btn"><img src="bank.png" alt="view"></button></td>
+              <td><span class="status approved">Approved</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+</div>
+
+</body>
+</html>
